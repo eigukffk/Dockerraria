@@ -36,7 +36,7 @@ else
 	else
 		if [ "$STARTMODE" = "PC" ]; then
 			echo "STARTING PC SERVER VIA VARIBLE"
-			/1436/Linux/TerrariaServer.bin.x86_64 -config /terraria/terraria.txt "$@"
+			/1449/Linux/TerrariaServer.bin.x86_64 -config /terraria/terraria.txt "$@"
 		elif [ "$STARTMODE" = "BASH" ]; then
 			echo "STARTING BASH VIA VARIBLE"
 			/bin/bash -login
