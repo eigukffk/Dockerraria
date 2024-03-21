@@ -14,8 +14,8 @@ else
 	if [ -z "$STARTMODE" ]; then 
 
 		if [ $# -eq 0 ]; then
-			/usr/games/cowsay "This could be us, but playing with this Terraria 1.4.3.6 PC server\
-			or the 1.4.0.5 MOBILE version, but you did something wrong.\
+			/usr/games/cowsay "This could be us, but playing with this Terraria 1.4.4.9 PC server\
+			or the 1.4.4.9.5 MOBILE version, but you did something wrong.\
 			Just enter the Terraria server parameters to the command line (type 'config' to use the\
 			'terraria.cfg' file instead) or type 'bash' to get a shell. *burp*\
 			Also check the new startup method via the STARTMODE environment variable.\
@@ -24,20 +24,17 @@ else
 
 			if [ "$1" == "config" ]; then
 				echo "STARTING PC SERVER WITH CONFIG"
-				/1436/Linux/TerrariaServer.bin.x86_64 -config /terraria/terraria.txt
+				/1449/Linux/TerrariaServer.bin.x86_64 -config /terraria/terraria.txt
 			else
 				echo "STARTING PC SERVER"
-				/1436/Linux/TerrariaServer.bin.x86_64 "$@"
+				/1449/Linux/TerrariaServer.bin.x86_64 "$@"
 			fi
 
 		fi
 	
 	# the new start up method via env variables
 	else
-		if [ "$STARTMODE" = "MOBILE" ]; then
-			echo "STARTING MOBILE SERVER VIA VARIABLE"
-			/ServerLinux/TerrariaServer.bin.x86_64 -config /terraria/terraria.txt "$@"
-		elif [ "$STARTMODE" = "PC" ]; then
+		if [ "$STARTMODE" = "PC" ]; then
 			echo "STARTING PC SERVER VIA VARIBLE"
 			/1436/Linux/TerrariaServer.bin.x86_64 -config /terraria/terraria.txt "$@"
 		elif [ "$STARTMODE" = "BASH" ]; then
