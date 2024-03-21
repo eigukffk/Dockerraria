@@ -22,8 +22,8 @@ The worlds are not compatible.
 ---
 ## STATUS 2022/04/12:
 
-  Terraria server 1.4.3.6  PC  
-  Terraria server 1.4.0.5  MOBILE  
+  Terraria server 1.4.4.9  PC  
+  Terraria server 1.4.4.9.5  MOBILE  
 
 
 ---
